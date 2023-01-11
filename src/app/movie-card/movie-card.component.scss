@@ -1,0 +1,65 @@
+
+.card {
+     background: rgba(255, 255, 255, 0.1); 
+    //color: rgb(255, 255, 255);
+    transition: 0.2s;
+    z-index: 3;
+    position: relative;
+    padding: 5px;
+    width: 200px;
+    height: auto;
+   // background: rgba(102, 117, 251, 0.1);
+  }
+  .text-wrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+ }
+
+ 
+.servicesfindesc {
+  opacity: 0;
+  visibility: hidden;
+}
+.servicesfin:hover ~ .servicesfindesc {
+  opacity: 1;
+  visibility: visible;
+} .card:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  
+  }
+  .card:hover h4 {
+    opacity: 1;
+  }
+  .card:hover img {
+    filter: blur(1px);
+  }
+  .card:hover ~ .text {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .notify-badge{
+    position: relative;
+    background: rgba(0,0,255,1);
+    height:2rem;
+    top:2.1rem;
+    left:8.4rem;
+    width:4rem;
+    text-align: center;
+    line-height: 2rem;;
+    font-size: 1rem;
+    color:white;
+    border:1px solid blue;
+}
+
+div span.only-show-on-hover {
+    visibility: hidden;
+}
+div:hover span.only-show-on-hover  {
+    visibility: visible;
+}
